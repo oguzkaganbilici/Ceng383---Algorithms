@@ -123,7 +123,7 @@ public class WeightedGraphs
 		{
 			while(componentIDS[v] != v)
 			{
-				v = componentIDS[v];
+				v = findRoot(componentIDS[v]);
 			}
 			return v;
 		}
